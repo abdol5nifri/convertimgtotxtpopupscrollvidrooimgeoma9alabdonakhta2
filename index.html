@@ -52,6 +52,7 @@
     border-radius: 12px;
     border: none;
     background: #2a2a40;
+    resize: none;
     color: #fff;
     font-size: 16px;
   }
@@ -67,6 +68,11 @@
     opacity: 0.85;
     margin-bottom: 5px;
   }
+  label[for="text"] {
+    display: block;
+    text-align: right;
+  }
+
   .row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -151,6 +157,9 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+     ::-webkit-scrollbar {
+    display: none;
+}
   }
   .popup {
     display: none;
@@ -174,9 +183,10 @@
     line-height: 1.6;
     margin-bottom: 10px;
   }
-  .popup video {
-    max-width: 100%;
-    height: auto;
+  .popup iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
     border-radius: 5px;
     margin-bottom: 15px;
   }
@@ -275,8 +285,8 @@
       <label for="align">محاذاة النص</label>
       <select id="align">
         <option value="left">يسار</option>
-        <option value="center" selected>وسط</option>
-        <option value="right">يمين</option>
+        <option value="center">وسط</option>
+        <option value="right" selected>يمين</option>
       </select>
     </div>
     <div>
@@ -305,114 +315,32 @@
   <p>
     باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
   </p>
-
-  <h3>لماذا تحتاج إلى أداة تحويل النص إلى صورة؟</h3>
-  <p>
-    في عالم أصبح فيه المحتوى المرئي ملكاً، تحويل الأفكار والنصوص إلى صور جذابة لم يعد مجرد رفاهية، بل أصبح ضرورة. سواء كنت مسوقاً، صانع محتوى، أو حتى مستخدماً عادياً، فإن أداة تحويل النص إلى صورة توفر لك حلاً سحرياً لتلك المشكلة.
-  </p>
-  <p>
-    تخيل أن لديك اقتباساً جميلاً أو إعلاناً مهماً وتريد مشاركته على منصات التواصل الاجتماعي مثل انستغرام أو فيسبوك. استخدام برامج تصميم معقدة مثل فوتوشوب يمكن أن يكون مضيعة للوقت ومكلفاً إذا لم تكن مصممًا محترفًا. هنا يأتي دور هذه الأداة البسيطة والفعالة. بفضل واجهتها السهلة، يمكنك إنشاء صور احترافية في ثوانٍ، دون الحاجة لأي خبرة سابقة.
-  </p>
-  <p>
-    تمنحك الأداة تحكمًا كاملاً في عناصر التصميم الأساسية. يمكنك اختيار اللون المناسب للنص، وتغيير الخلفية لتتناسب مع رسالتك، والتحكم في حجم الخط والمسافات بين الأسطر لجعل النص سهل القراءة. والأهم من ذلك، يمكنك تحديد جودة الصورة النهائية، مما يضمن حصولك على صورة عالية الدقة جاهزة للطباعة أو للنشر على أي منصة.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-
-  <h3>لماذا تحتاج إلى أداة تحويل النص إلى صورة؟</h3>
-  <p>
-    في عالم أصبح فيه المحتوى المرئي ملكاً، تحويل الأفكار والنصوص إلى صور جذابة لم يعد مجرد رفاهية، بل أصبح ضرورة. سواء كنت مسوقاً، صانع محتوى، أو حتى مستخدماً عادياً، فإن أداة تحويل النص إلى صورة توفر لك حلاً سحرياً لتلك المشكلة.
-  </p>
-  <p>
-    تخيل أن لديك اقتباساً جميلاً أو إعلاناً مهماً وتريد مشاركته على منصات التواصل الاجتماعي مثل انستغرام أو فيسبوك. استخدام برامج تصميم معقدة مثل فوتوشوب يمكن أن يكون مضيعة للوقت ومكلفاً إذا لم تكن مصممًا محترفًا. هنا يأتي دور هذه الأداة البسيطة والفعالة. بفضل واجهتها السهلة، يمكنك إنشاء صور احترافية في ثوانٍ، دون الحاجة لأي خبرة سابقة.
-  </p>
-  <p>
-    تمنحك الأداة تحكمًا كاملاً في عناصر التصميم الأساسية. يمكنك اختيار اللون المناسب للنص، وتغيير الخلفية لتتناسب مع رسالتك، والتحكم في حجم الخط والمسافات بين الأسطر لجعل النص سهل القراءة. والأهم من ذلك، يمكنك تحديد جودة الصورة النهائية، مما يضمن حصولك على صورة عالية الدقة جاهزة للطباعة أو للنشر على أي منصة.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-
-  <h3>لماذا تحتاج إلى أداة تحويل النص إلى صورة؟</h3>
-  <p>
-    في عالم أصبح فيه المحتوى المرئي ملكاً، تحويل الأفكار والنصوص إلى صور جذابة لم يعد مجرد رفاهية، بل أصبح ضرورة. سواء كنت مسوقاً، صانع محتوى، أو حتى مستخدماً عادياً، فإن أداة تحويل النص إلى صورة توفر لك حلاً سحرياً لتلك المشكلة.
-  </p>
-  <p>
-    تخيل أن لديك اقتباساً جميلاً أو إعلاناً مهماً وتريد مشاركته على منصات التواصل الاجتماعي مثل انستغرام أو فيسبوك. استخدام برامج تصميم معقدة مثل فوتوشوب يمكن أن يكون مضيعة للوقت ومكلفاً إذا لم تكن مصممًا محترفًا. هنا يأتي دور هذه الأداة البسيطة والفعالة. بفضل واجهتها السهلة، يمكنك إنشاء صور احترافية في ثوانٍ، دون الحاجة لأي خبرة سابقة.
-  </p>
-  <p>
-    تمنحك الأداة تحكمًا كاملاً في عناصر التصميم الأساسية. يمكنك اختيار اللون المناسب للنص، وتغيير الخلفية لتتناسب مع رسالتك، والتحكم في حجم الخط والمسافات بين الأسطر لجعل النص سهل القراءة. والأهم من ذلك، يمكنك تحديد جودة الصورة النهائية، مما يضمن حصولك على صورة عالية الدقة جاهزة للطباعة أو للنشر على أي منصة.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-
-  <h3>لماذا تحتاج إلى أداة تحويل النص إلى صورة؟</h3>
-  <p>
-    في عالم أصبح فيه المحتوى المرئي ملكاً، تحويل الأفكار والنصوص إلى صور جذابة لم يعد مجرد رفاهية، بل أصبح ضرورة. سواء كنت مسوقاً، صانع محتوى، أو حتى مستخدماً عادياً، فإن أداة تحويل النص إلى صورة توفر لك حلاً سحرياً لتلك المشكلة.
-  </p>
-  <p>
-    تخيل أن لديك اقتباساً جميلاً أو إعلاناً مهماً وتريد مشاركته على منصات التواصل الاجتماعي مثل انستغرام أو فيسبوك. استخدام برامج تصميم معقدة مثل فوتوشوب يمكن أن يكون مضيعة للوقت ومكلفاً إذا لم تكن مصممًا محترفًا. هنا يأتي دور هذه الأداة البسيطة والفعالة. بفضل واجهتها السهلة، يمكنك إنشاء صور احترافية في ثوانٍ، دون الحاجة لأي خبرة سابقة.
-  </p>
-  <p>
-    تمنحك الأداة تحكمًا كاملاً في عناصر التصميم الأساسية. يمكنك اختيار اللون المناسب للنص، وتغيير الخلفية لتتناسب مع رسالتك، والتحكم في حجم الخط والمسافات بين الأسطر لجعل النص سهل القراءة. والأهم من ذلك، يمكنك تحديد جودة الصورة النهائية، مما يضمن حصولك على صورة عالية الدقة جاهزة للطباعة أو للنشر على أي منصة.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
-  <p>
-    باختصار، هذه الأداة هي الحل الأمثل لتحويل الأفكار إلى إبداعات بصرية. إنها توفر الوقت والجهد، وتفتح الباب أمام الجميع لإنشاء محتوى مرئي جذاب ومؤثر، من دون أي قيود تقنية.
-  </p>
 </div>
 
 <div class="image-gallery">
   <h3>أمثلة من أعمالنا</h3>
-  <img src="http://googleusercontent.com/image_generation_content/33" alt="صورة تم إنشاؤها بالذكاء الاصطناعي"/>
+    <img src="https://i.postimg.cc/7hmmBvsy/4873159.jpg" alt="صورة تم إنشاؤها بالذكاء الاصطناعي"/>
+        <p>تعلم كيفاش تلقى مشكلة حقيقية و تحولها لمنتج رقمي ناجح.</p>
+    <p>تعلم كيفاش تلقى مشكلة حقيقية و تحولها لمنتج رقمي ناجح.</p>
+    <p>تعلم كيفاش تلقى مشكلة حقيقية و تحولها لمنتج رقمي ناجح.</p>
+    <p>تعلم كيفاش تلقى مشكلة حقيقية و تحولها لمنتج رقمي ناجح.</p>
+    <p>تعلم كيفاش تلقى مشكلة حقيقية و تحولها لمنتج رقمي ناجح.</p>
+    <p>تعلم كيفاش تلقى مشكلة حقيقية و تحولها لمنتج رقمي ناجح.</p>
+    <p>تعلم كيفاش تلقى مشكلة حقيقية و تحولها لمنتج رقمي ناجح.</p>
+    <p>تعلم كيفاش تلقى مشكلة حقيقية و تحولها لمنتج رقمي ناجح.</p>
+
+
 </div>
 
 <div id="popupContainer" class="popup-container">
   <div id="popup" class="popup">
     <span class="close-button" id="closePopupBtn">&times;</span>
-    <h3>تخفيضات نهاية السنة!</h3>
-    <video controls poster="https://i.postimg.cc/7hmmBvsy/4873159.jpg" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 15px;">
-      <source src="https://example.com/your-video.mp4" type="video/mp4">
-      المتصفح ديالك ما كيدعمش عرض الفيديو.
-    </video>
-    <p>استفد من تخفيضات هائلة على جميع منتجاتنا.</p>
+    <h3>كورس المنتجات الرقمية 2025</h3>
+        <img src="https://i.postimg.cc/7hmmBvsy/4873159.jpg" alt="صورة تم إنشاؤها بالذكاء الاصطناعي"width="100%"/>
+
+    <iframe src="https://www.youtube.com/embed/zMZDHwHn8bE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>تعلم كيفاش تلقى مشكلة حقيقية و تحولها لمنتج رقمي ناجح.</p>
     <p>لا تفوت الفرصة! العرض محدود.</p>
     <button id="popupButton" class="popup-button">اكتشف العروض الآن</button>
   </div>
@@ -422,6 +350,7 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const padding = 20;
+const PREVIEW_WIDTH = 800;
 
 const textColorInput = document.getElementById('textColor');
 const bgColorInput = document.getElementById('bgColor');
@@ -441,19 +370,34 @@ bgColorInput.addEventListener('input', ()=>{
 function wrapText(context, text, maxWidth) {
     const lines = [];
     const paragraphs = text.split('\n');
-    context.direction = 'rtl'; // إضافة مهمة لدعم الكتابة من اليمين لليسار
+    context.direction = 'rtl';
 
     paragraphs.forEach(paragraph => {
         let words = paragraph.split(' ');
-        if (words.length === 0 || paragraph.length === 0) {
-            lines.push('');
-            return;
-        }
+        let currentLine = '';
 
-        let currentLine = words[0];
-        for (let i = 1; i < words.length; i++) {
+        for (let i = 0; i < words.length; i++) {
             let word = words[i];
-            let testLine = currentLine + " " + word;
+            
+            // Check if a single word is longer than the maxWidth
+            let wordWidth = context.measureText(word).width;
+            if (wordWidth > maxWidth && currentLine === '') {
+                // Break a very long word into smaller chunks
+                let tempLine = '';
+                for (let j = 0; j < word.length; j++) {
+                    let testChar = word[j];
+                    if (context.measureText(tempLine + testChar).width < maxWidth) {
+                        tempLine += testChar;
+                    } else {
+                        lines.push(tempLine);
+                        tempLine = testChar;
+                    }
+                }
+                lines.push(tempLine);
+                continue; // Move to the next word
+            }
+
+            let testLine = (currentLine === '') ? word : currentLine + " " + word;
             if (context.measureText(testLine).width < maxWidth) {
                 currentLine = testLine;
             } else {
@@ -463,13 +407,7 @@ function wrapText(context, text, maxWidth) {
         }
         lines.push(currentLine);
     });
-    return lines;
-}
-
-function calculateCanvasHeight(context, text, fontSize, lineHeight, maxWidth) {
-    context.font = fontSize + 'px Arial';
-    const lines = wrapText(context, text, maxWidth);
-    return lines.length * lineHeight + padding * 2;
+    return lines.filter(line => line.trim() !== '');
 }
 
 function renderPreview() {
@@ -479,24 +417,35 @@ function renderPreview() {
     const textColor = textColorInput.value;
     const bgColor = bgColorInput.value;
     const align = document.getElementById('align').value;
-    const maxWidth = canvas.width - 2 * padding;
 
-    canvas.height = calculateCanvasHeight(ctx, text, fontSize, lineHeight, maxWidth);
+    const maxWidth = PREVIEW_WIDTH - 2 * padding;
+    ctx.font = fontSize + 'px Arial';
+    const lines = wrapText(ctx, text, maxWidth);
 
+    canvas.width = PREVIEW_WIDTH;
+    canvas.height = (lines.length * lineHeight) + (padding * 2);
+    
     ctx.fillStyle = bgColor;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = textColor;
     ctx.font = fontSize + 'px Arial';
-    const lines = wrapText(ctx, text, maxWidth);
-    ctx.direction = 'rtl'; // إضافة مهمة لدعم الكتابة من اليمين لليسار
+    ctx.direction = 'rtl';
+    ctx.textBaseline = 'top';
+    ctx.textAlign = align;
 
     let y = padding;
-    const x = align === 'center' ? canvas.width / 2 : (align === 'right' ? canvas.width - padding : padding);
+    let x;
+
+    if (align === 'center') {
+        x = canvas.width / 2;
+    } else if (align === 'right') {
+        x = canvas.width - padding;
+    } else {
+        x = padding;
+    }
 
     lines.forEach(line => {
-        ctx.textAlign = align;
-        ctx.textBaseline = 'top';
         ctx.fillText(line, x, y);
         y += lineHeight;
     });
@@ -513,31 +462,40 @@ function downloadImage() {
     const align = document.getElementById('align').value;
     const scale = parseInt(document.getElementById('scale').value);
 
-    const offCanvasWidth = 800 * scale;
-    const offCanvasPadding = padding * scale;
-    const offCanvasMaxWidth = offCanvasWidth - 2 * offCanvasPadding;
-
     const offCanvas = document.createElement('canvas');
     const offCtx = offCanvas.getContext('2d');
 
+    const offCanvasWidth = PREVIEW_WIDTH * scale;
+    const offCanvasPadding = padding * scale;
+    const offCanvasMaxWidth = offCanvasWidth - 2 * offCanvasPadding;
+
     offCtx.font = fontSize * scale + 'px Arial';
     const lines = wrapText(offCtx, text, offCanvasMaxWidth);
+    
     offCanvas.width = offCanvasWidth;
-    offCanvas.height = lines.length * (lineHeight * scale) + offCanvasPadding * 2;
+    offCanvas.height = (lines.length * (lineHeight * scale)) + (offCanvasPadding * 2);
 
     offCtx.fillStyle = bgColor;
     offCtx.fillRect(0, 0, offCanvas.width, offCanvas.height);
 
     offCtx.fillStyle = textColor;
     offCtx.font = fontSize * scale + 'px Arial';
-    offCtx.direction = 'rtl'; // إضافة مهمة لدعم الكتابة من اليمين لليسار
+    offCtx.direction = 'rtl';
+    offCtx.textBaseline = 'top';
+    offCtx.textAlign = align;
 
-    const x = align === 'center' ? offCanvas.width / 2 : (align === 'right' ? offCanvas.width - offCanvasPadding : offCanvasPadding);
     let y = offCanvasPadding;
+    let x;
+
+    if (align === 'center') {
+        x = offCanvas.width / 2;
+    } else if (align === 'right') {
+        x = offCanvas.width - offCanvasPadding;
+    } else {
+        x = offCanvasPadding;
+    }
 
     lines.forEach(line => {
-        offCtx.textAlign = align;
-        offCtx.textBaseline = 'top';
         offCtx.fillText(line, x, y);
         y += lineHeight * scale;
     });
@@ -559,18 +517,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const popupButton = document.getElementById('popupButton');
   
   const showPopupOnScroll = () => {
-    // Check if the scroll position has reached the halfway point of the body
     const halfPage = document.body.scrollHeight / 2;
     if (window.scrollY >= halfPage) {
-      // Step 1: Show the blurry container
       popupContainer.style.display = 'flex';
-      
-      // Step 2: After a small delay, show the popup content
-      setTimeout(() => {
-        popup.style.display = 'block';
-      }, 500); // 0.5 second delay for a better visual effect
-
-      // Remove the event listener so the popup only appears once
+      popup.style.display = 'block';
       window.removeEventListener('scroll', showPopupOnScroll);
     }
   };
@@ -582,7 +532,6 @@ document.addEventListener('DOMContentLoaded', function() {
     popup.style.display = 'none';
   });
 
-  // هذا هو الكود اللي كيخلي الـ popup يختفي ملي كتكليكي على برا ديالو
   window.addEventListener('click', (event) => {
     if (event.target == popupContainer) {
       popupContainer.style.display = 'none';
@@ -591,9 +540,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   popupButton.addEventListener('click', () => {
-    window.open('https://example.com', '_blank'); // بدل هذا الرابط بالرابط لي بغيتي
+    window.open('https://example.com', '_blank');
   });
 });
 </script>
 </body>
-  </html>
+</html>
